@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:background="#171717">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Admin Access"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp"/>
+
+    <EditText
+        android:id="@+id/etAdminEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admin Email"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:inputType="textEmailAddress"
+        android:backgroundTint="#FF3B30"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etAdminPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColor="@color/white"
+        android:textColorHint="#888888"
+        android:inputType="textPassword"
+        android:backgroundTint="#FF3B30"
+        android:layout_marginBottom="24dp"/>
+
+    <Button
+        android:id="@+id/btnAdminLogin"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="Login as Admin"
+        android:backgroundTint="#FF3B30"
+        android:textAllCaps="false"/>
+
+</LinearLayout>
