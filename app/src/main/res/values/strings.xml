@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Help360</string>
+    <string name="emergency">Emergency</string>
+    <string name="sos">SOS ALERT</string>
+    <string name="one_tap_call">One-Tap Call</string>
+    <string name="directory">Directory</string>
+    <string name="favorites">Favorites</string>
+    <string name="settings">Settings</string>
+    <string name="search_hint">Search contacts...</string>
+    <string name="language_bn">বাংলা</string>
+    <string name="language_en">English</string>
+    <string name="filter">Filter</string>
+    <string name="sos_description">Hold for 3 seconds to send alert</string>
+    <string name="current_location">Current Location</string>
+    <string name="refresh">Refresh</string>
+    <string name="nearest_service">Nearest Service</string>
+    <string name="history">SOS Alert History</string>
+    <string name="trusted_contacts">Trusted Contacts</string>
+    <string name="logout">Logout</string>
+    <string name="police">POLICE</string>
+    <string name="ambulance">AMBULANCE</string>
+    <string name="fire">FIRE</string>
+    <string name="hospital">HOSPITAL</string>
+    <string name="blood">BLOOD</string>
+    <string name="legal">LEGAL AID</string>
+    <string name="women_child">WOMEN &amp; CHILD</string>
+    <string name="info_333">INFO 333</string>
+    <string name="personal_info">PERSONAL INFORMATION</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="emergency_address">Emergency Address</string>
+    <string name="save_changes">SAVE CHANGES</string>
+    <string name="verified_account">Verified Account</string>
+
+    <!-- AI Assistant Strings -->
+    <string name="ai_full_title">AI Emergency Assistant</string>
+    <string name="ai_welcome">Welcome to AI Help</string>
+    <string name="ai_intro">How can I help you today? Ask about risks or emergency procedures.</string>
+    <string name="ai_risk_analysis">Risk Analysis</string>
+    <string name="ai_emergency_guide">Emergency Guide</string>
+    <string name="ai_chat_hint">Type your emergency query...</string>
+    <string name="login_title">Login to Help360</string>
+    <string name="email_hint">Email</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button">Login</string>
+    <string name="register_prompt">Don\'t have an account? Register here</string>
+    <string name="create_account_title">Create Account</string>
+    <string name="register_button">Register</string>
+    <string name="login_prompt">Already have an account? Login here</string>
+    <string name="signup_google">Sign up with Google</string>
+    <string name="signin_google">Sign in with Google</string>
+    <string name="splash_tagline">Your Safety, Our Priority</string>
+</resources>

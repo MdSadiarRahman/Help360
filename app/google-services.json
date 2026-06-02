@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1027738656200",
+    "project_id": "help360-a74a5",
+    "storage_bucket": "help360-a74a5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1027738656200:android:5e5949d745143dd81fb4fd",
+        "android_client_info": {
+          "package_name": "com.example.help360"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1027738656200-c1rfk0ua34mkopt25i2jsv1rjje9kmpv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.help360",
+            "certificate_hash": "4e305a2146c91805c20f25b0539cf3fb5986a905"
+          }
+        },
+        {
+          "client_id": "1027738656200-59g1hlaa23ebukt9q4a8m0uf5p7lrouk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPgoqWibZKhZupYP_9G6dNw1PPH18sP70"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1027738656200-59g1hlaa23ebukt9q4a8m0uf5p7lrouk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
