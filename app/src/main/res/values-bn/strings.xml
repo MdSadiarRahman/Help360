@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">হেল্প৩৬০</string>
+    <string name="emergency">জরুরিসেবা</string>
+    <string name="sos">এসওএস এলার্ট</string>
+    <string name="one_tap_call">এক ট্যাপ কল</string>
+    <string name="directory">ডিরেক্টরি</string>
+    <string name="favorites">প্রিয়</string>
+    <string name="settings">সেটিংস</string>
+    <string name="search_hint">কন্টাক্ট খুঁজুন...</string>
+    <string name="language_bn">বাংলা</string>
+    <string name="language_en">English</string>
+    <string name="filter">ফিল্টার</string>
+    <string name="sos_description">এলার্ট পাঠাতে ৩ সেকেন্ড ধরে রাখুন</string>
+    <string name="current_location">বর্তমান অবস্থান</string>
+    <string name="refresh">রিফ্রেশ</string>
+    <string name="nearest_service">নিকটস্থ সেবা</string>
+    <string name="history">এসওএস এলার্ট হিস্ট্রি</string>
+    <string name="trusted_contacts">নির্ভরযোগ্য কন্টাক্ট</string>
+    <string name="logout">লগআউট</string>
+    <string name="police">পুলিশ</string>
+    <string name="ambulance">অ্যাম্বুলেন্স</string>
+    <string name="fire">অগ্নিনির্বাপক</string>
+    <string name="hospital">হাসপাতাল</string>
+    <string name="blood">রক্ত</string>
+    <string name="legal">আইনি সহায়তা</string>
+    <string name="women_child">নারী ও শিশু</string>
+    <string name="info_333">তথ্য ৩৩৩</string>
+    <string name="personal_info">ব্যক্তিগত তথ্য</string>
+
+    <!-- AI Assistant Strings (Bangla) -->
+    <string name="ai_full_title">এআই জরুরি সহকারী</string>
+    <string name="ai_welcome">এআই হেল্পে স্বাগতম</string>
+    <string name="ai_intro">আমি আজ আপনাকে কীভাবে সাহায্য করতে পারি? ঝুঁকি বা জরুরি পদ্ধতি সম্পর্কে জিজ্ঞাসা করুন।</string>
+    <string name="ai_risk_analysis">ঝুঁকি বিশ্লেষণ</string>
+    <string name="ai_emergency_guide">জরুরি গাইড</string>
+    <string name="ai_chat_hint">আপনার জরুরি প্রশ্ন লিখুন...</string>
+    <string name="login_title">Help360-এ লগইন করুন</string>
+    <string name="email_hint">ইমেল</string>
+    <string name="password_hint">পাসওয়ার্ড</string>
+    <string name="login_button">লগইন</string>
+    <string name="register_prompt">অ্যাকাউন্ট নেই? এখানে নিবন্ধন করুন</string>
+    <string name="create_account_title">অ্যাকাউন্ট তৈরি করুন</string>
+    <string name="register_button">নিবন্ধন করুন</string>
+    <string name="login_prompt">ইতিমধ্যে একটি অ্যাকাউন্ট আছে? এখানে লগইন করুন</string>
+    <string name="signup_google">গুগল দিয়ে সাইন আপ করুন</string>
+    <string name="signin_google">গুগল দিয়ে সাইন ইন করুন</string>
+    <string name="splash_tagline">আপনার নিরাপত্তা, আমাদের অগ্রাধিকার</string>
+</resources>

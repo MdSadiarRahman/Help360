@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Help360" parent="Theme.Material3.Dark.NoActionBar">
+        <item name="colorPrimary">#FF3B30</item>
+        <item name="android:statusBarColor">#0A0A0A</item>
+    </style>
+
+    <style name="ShapeAppearance.Help360.Circle" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="Theme.Help360.Dialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="colorSurface">#171717</item>
+        <item name="colorOnSurface">#FFFFFF</item>
+        <item name="colorPrimary">#FF3B30</item>
+    </style>
+</resources>

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0A0A0A"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="24dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:cardBackgroundColor="#FF3B30"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="0dp">
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="8dp"
+                    android:src="@android:drawable/ic_dialog_alert"
+                    android:contentDescription="@string/app_name"
+                    app:tint="@color/white" />
+            </com.google.android.material.card.MaterialCardView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:text="HELP360"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.05" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLanguage"
+            style="@style/Widget.Material3.Button.TonalButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:text="@string/language_bn"
+            android:textColor="#888888"
+            android:textSize="12sp"
+            app:backgroundTint="#171717"
+            app:cornerRadius="20dp" />
+    </RelativeLayout>
+
+    <!-- Search Bar & Filter Toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_marginBottom="16dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/circle_shape"
+            android:backgroundTint="#171717"
+            android:paddingHorizontal="16dp">
+
+            <ImageView
+                android:id="@+id/searchIcon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#444444"
+                android:contentDescription="Search Icon" />
+
+            <EditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@id/searchIcon"
+                android:background="@android:color/transparent"
+                android:hint="@string/search_hint"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="@color/white"
+                android:textColorHint="#444444"
+                android:textSize="16sp"
+                android:inputType="text"
+                android:autofillHints="none" />
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnFilterToggle"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="12dp"
+            app:cardBackgroundColor="#FF3B30"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:src="@android:drawable/ic_menu_sort_by_size"
+                app:tint="@color/white"
+                android:contentDescription="Toggle Filter" />
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+    <!-- Filter Section (Expandable) -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/filterSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="#171717"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FILTER"
+                android:textColor="#555555"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:singleSelection="true"
+                app:selectionRequired="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAll"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ALL"
+                    android:checked="true"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:chipIconVisible="false"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPolice"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="POLICE"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAmbulance"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AMBULANCE"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipFire"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="FIRE"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHospital"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HOSPITAL"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipHelpline"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="HELPLINE"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipBlood"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/blood"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipLegal"
+                    style="@style/Widget.Material3.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/legal"
+                    app:chipBackgroundColor="@color/chip_bg_selector"
+                    android:textColor="@color/chip_text_color"
+                    app:chipStrokeWidth="0dp"
+                    app:checkedIconVisible="false" />
+            </com.google.android.material.chip.ChipGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="DISTRICT"
+                android:textColor="#555555"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:letterSpacing="0.1" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="12dp"
+                app:cardBackgroundColor="#0A0A0A"
+                app:cardCornerRadius="16dp"
+                app:strokeColor="#33FF3B30"
+                app:strokeWidth="1dp"
+                app:cardElevation="0dp">
+                <Spinner
+                    android:id="@+id/spinnerDistrict"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:backgroundTint="@color/white"
+                    android:paddingHorizontal="12dp" />
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <!-- List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvDirectory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:paddingBottom="80dp" />
+
+</LinearLayout>
