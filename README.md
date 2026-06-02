@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# 🚨 Help360 - Emergency Help & Service App
 
-# Run and deploy your AI Studio app
+Help360 is an Android application designed to provide quick emergency assistance and essential services in one place. The app includes SOS features, location services, AI assistance, admin management, and a user-friendly navigation system.
 
-This contains everything you need to run your app locally.
+This project is developed as a **multi-developer collaborative Android project** using Git & GitHub workflow with proper branching and pull request system.
 
-View your app in AI Studio: https://ai.studio/apps/71f38397-895b-4eaa-8080-59fb990e1713
+---
 
-## Run Locally
+## 👨‍💻 Team Members & Contributions
 
-**Prerequisites:**  Node.js
+- **Saif (Authentication Module)**
+  - Login System
+  - Registration System
+  - Splash Screen
+  - User Authentication Flow
 
+- **Aftab (Core Features Developer)**
+  - Home Module
+  - Map Integration
+  - Favorites System
+  - Bottom Navigation Setup
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+- **Fahomida (System & Advanced Features)**
+  - SOS Emergency System
+  - AI Chat/Assistant Module
+  - Admin Dashboard
+  - Location Tracking Service
+
+---
+
+## ✨ Features
+
+- 🔐 User Authentication (Login/Register)
+- 🚨 SOS Emergency Alert System
+- 📍 Live Location Tracking
+- 🗺️ Google Maps Integration
+- 🤖 AI Assistance Feature
+- ⭐ Favorite Services System
+- 🧑‍💼 Admin Control Panel
+- 📱 Clean & Modern UI Design
+- 🌐 Multi-language Support (English + Bangla)
+
+---
+
+## 🛠️ Tech Stack
+
+- **Language:** Kotlin
+- **Framework:** Android SDK
+- **Architecture:** MVVM (Basic Structure)
+- **Backend:** Firebase (Authentication / Firestore)
+- **Tools:** Android Studio, Git, GitHub
+
+---
+
+## 📂 Project Structure
